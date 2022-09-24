@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+div.container
+{
+    height: 100vh;
+    display: flex;
+}
+
+div.container > span
+{
+    height: 100%;
+}
+
+span.leftPortion
+{
+    flex-basis: 32%;
+    background-image: url(images/bg-main-desktop.png);
+    background-size: cover;
+}
+
+span.rightPortion
+{
+    flex-basis: 68%;
+}
+
+span.card-front
+{
+    display: inline-block;
+    width: 390px;
+    height: 215px;
+    position: relative;
+    top: 140px;
+    left: 180px;
+    border-radius: 10px;
+    background-image: url(images/bg-card-front.png);
+    font-family: [Space-Grotesk], sans-serif;
+    color: white;
+    font-weight: 500;
+}
+span.card-back
+{
+    display: inline-block;
+    width: 390px;
+    height: 215px;
+    position: relative;
+    top: 180px;
+    left: 270px;
+    border-radius: 10px;
+    background-image: url(images/bg-card-back.png);
+    font-family: [Space-Grotesk], sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+span#circle-lg
+{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: azure;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+span#circle-sm
+{
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: 1px solid azure;
+    position: relative;
+    top: 10px;
+    left: 30px;
+}
+
+span#card-num
+{
+    font-size: 24px;
+    position: absolute;
+    bottom: 65px;
+    left: 45px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+span#holder_name
+{
+    font-size: 12px;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+span#expiry_date
+{
+    position: absolute;
+    right: 30px;
+    bottom: 25px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+span#CVC
+{
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    right: 15px;
+    bottom: 85px;
+    letter-spacing: 2px;
+}
+
+form ,  #completionBox
+{
+    height: 70vh;
+    width: 30vw;
+    margin: 12vh 12vw 12vh 24vw;
+    padding: 80px 50px;
+    font-family: "Kdam Thmor Pro";
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+input , label{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+input
+{
+    outline: 1px solid gainsboro;
+    border-radius: 4px;
+    width: 22vw;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+input:focus
+{
+    outline: 2px solid gray;
+}
+input::placeholder
+{
+    opacity: 0.3;
+    font-weight: 600;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+form div
+{
+    padding-bottom: 30px;
+}
+
+div.important_info
+{
+    display: flex;
+}
+
+div.important_info input.date
+{
+   width: 80px;
+}
+
+
+span#date_input
+{
+    display: flex;
+}
+
+div.cvc
+{
+    margin-left: 35px;
+}
+
+input#CVCinput
+{
+    width: 120px;
+}
+
+button
+{
+    width: 23vw;
+    height: 40px;
+    margin-left: 1%;
+    color: white;
+    background-color: hsl(278, 68%, 11%);
+    border-radius: 10px;
+    font-family: "Kdam Thmor Pro";
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding-left: 2%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  button:hover
+  {
+    background-color: hsl(223, 53%, 17%);
+    cursor: pointer;
+  }
+
+  .warning
+  {
+    color: hsl(0, 100%, 66%);
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-bottom: -30px;
+  } 
+
+  img#complete
+  {
+    margin: 10px 0 20px 135px;
+  }
+
+  #thank
+  {
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-weight: 550;
+    margin-left: 100px;
+    margin-bottom: 20px;
+  }
+
+  #confirmation
+  {
+    opacity: 0.4;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  button#continue
+  {
+    margin-top: 20px;
+  }
+
+  @media (max-width:376px)
+  {
+    div.container
+    {
+        flex-direction: column;
+    }
+span.leftPortion
+{
+    min-height: 35vh;
+    max-height: 35vh;
+    background-image: url(images/bg-main-mobile.png);
+}
+
+    span.card-front
+{
+    width: 280px;
+    height: 150px;
+    top: 115px;
+    left: 10px;
+    border-radius: 5px;
+    background-size:cover ;
+    z-index: 1;
+}
+span.card-back
+{
+    width: 280px;
+    height: 150px;
+    position: absolute;
+    top: 21px;
+    left: 70px;
+    border-radius: 5px;
+    background-size: cover;
+}
+span#circle-lg
+{
+    height: 30px;
+    width: 30px;
+    top: 10px;
+    left: 10px;
+}
+span#circle-sm
+{
+    height: 18px;
+    width: 18px;
+    position: relative;
+    top: 6px;
+    left: 15px;
+}
+span#card-num
+{
+    font-size: 20px;
+    position: absolute;
+    bottom: 45px;
+    left: 25px;
+}
+span#holder_name
+{
+    font-size: 11px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+span#expiry_date
+{
+    position: absolute;
+    right: 18px;
+    bottom: 14px;
+}
+span#CVC
+{
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    right: 33px;
+    bottom: 66px;
+    letter-spacing: 1px;
+}
+form ,  #completionBox
+{
+    height: 60vh;
+    width: 100vw;
+    margin: 15vh 4vw 2vh 6vw;
+    padding: 0;
+}
+form div
+{
+    padding-bottom: 20px;
+}
+input , label{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px;
+    margin: 0 10px;
+}
+
+input
+{
+    border-radius: 4px;
+    width: 80vw;
+    height: 42px;
+    padding-left: 10px;
+}
+div.important_info
+{
+    display: flex;
+}
+
+div.important_info input.date
+{
+   width: 65px;
+}
+
+
+span#date_input
+{
+    display: flex;
+}
+
+div.cvc
+{
+    margin-left: 25px;
+}
+
+input#CVCinput
+{
+    width: 100px;
+}
+button
+{
+    width: 87vw;
+}
+#thank
+  {
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-weight: 550;
+    margin-left: 90px;
+    margin-bottom: 20px;
+  }
+
+  #confirmation
+  {
+    opacity: 0.4;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+  }
